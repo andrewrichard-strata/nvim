@@ -8,6 +8,10 @@
       "rev": "89c175581ff3ac9761c23dc2ee4f2838fa47bad9",
       "src": "https://github.com/bjarneo/ash.nvim.git"
     },
+    "ash.nvim": {
+      "rev": "89c175581ff3ac9761c23dc2ee4f2838fa47bad9",
+      "src": "https://github.com/bjarneo/ash.nvim.git"
+    },
     "bamboo": {
       "rev": "1309bc88bffcf1bedc3e84e7fa9004de93da774a",
       "src": "https://github.com/ribru17/bamboo.nvim.git"
@@ -50,7 +54,7 @@
       "src": "https://github.com/everviolet/nvim.git"
     },
     "fff.nvim": {
-      "rev": "99f5160e1c2bde900125f7613226bc1a1d6d4b99",
+      "rev": "030a583b37802416ce9108295b209d2e6b9d0079",
       "src": "https://github.com/dmtrKovalenko/fff.nvim"
     },
     "fidget.nvim": {
@@ -76,6 +80,10 @@
     "hackerman": {
       "rev": "d7699ce7639686b8f3a5ae108b496a32ee5c076d",
       "src": "https://github.com/bjarneo/hackerman.nvim.git"
+    },
+    "harpoon": {
+      "rev": "1bc17e3e42ea3c46b33c0bbad6a880792692a1b3",
+      "src": "https://github.com/ThePrimeagen/harpoon.git"
     },
     "kanagawa": {
       "rev": "bb85e4bfc8d89b0e62c8fa53ccdd13d12e2f77b3",
@@ -105,13 +113,25 @@
       "rev": "a8a039f5d6189b28d76fa0221e64965efec7e996",
       "src": "https://github.com/tahayvr/matteblack.nvim.git"
     },
+    "miasma.nvim": {
+      "rev": "627f2e1cac91de0d1d4dd7472b506a30f41b2b7d",
+      "src": "https://github.com/xero/miasma.nvim.git"
+    },
     "mini.nvim": {
       "rev": "a405061478d8027b4e21214d897ce1eb33115792",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
+    "neovim": {
+      "rev": "ff483051a47e27d84bdef47703538df1ed9f4a47",
+      "src": "https://github.com/rose-pine/neovim.git"
+    },
     "nordfox": {
       "rev": "26b61b1f856ec37cae3cb64f5690adb955f246a1",
       "src": "https://github.com/EdenEast/nightfox.nvim.git"
+    },
+    "nvim": {
+      "rev": "347c62833eb1f1e80c3ae275b1122c2173c47614",
+      "src": "https://github.com/everviolet/nvim.git"
     },
     "nvim-autopairs": {
       "rev": "7b9923abad60b903ece7c52940e1321d39eccc79",
@@ -132,6 +152,14 @@
     "nvim-web-devicons": {
       "rev": "0d7d35fa946837b8738b17c18d1faa1ac351e7f9",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
+    },
+    "oil-git-status.nvim": {
+      "rev": "a3e2ccb00cb8822115e28a9a1791eda051d940c9",
+      "src": "https://github.com/refractalize/oil-git-status.nvim"
+    },
+    "oil.nvim": {
+      "rev": "b91ee5a77a6a9605d9c1aaf4fda74b66082c8297",
+      "src": "https://github.com/stevearc/oil.nvim"
     },
     "plenary.nvim": {
       "rev": "74b06c6c75e4eeb3108ec01852001636d85a932b",
@@ -164,6 +192,10 @@
     "trouble.nvim": {
       "rev": "bd67efe408d4816e25e8491cc5ad4088e708a69a",
       "src": "https://github.com/folke/trouble.nvim"
+    },
+    "vantablack.nvim": {
+      "rev": "8a05ea96343914f1001e937b4fa7d9d44b51d221",
+      "src": "https://github.com/bjarneo/vantablack.nvim.git"
     },
     "workspace-diagnostics.nvim": {
       "rev": "a35321d8401878cc9558e357acfd0da58b582739",

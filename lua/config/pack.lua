@@ -19,14 +19,13 @@ vim.pack.add({
 	{ src = "https://github.com/stevearc/conform.nvim" },
 	{ src = "https://github.com/folke/trouble.nvim" },
 	{ src = "https://github.com/artemave/workspace-diagnostics.nvim" },
-	-- { src = "https://github.com/lewis6991/gitsigns.nvim" },
+	{ src = "https://github.com/lewis6991/gitsigns.nvim" },
 	{ src = "https://github.com/windwp/nvim-autopairs" },
 	{ src = "https://github.com/nvim-mini/mini.nvim" },
 
 	-- fff file search
 	{ src = "https://github.com/dmtrKovalenko/fff.nvim" },
 	-- snacks
-	-- { src = "https://github.com/folke/snacks.nvim.git" },
 
 	-- misc plugins
 	{ src = "https://github.com/rcarriga/nvim-notify.git" },
@@ -44,14 +43,16 @@ vim.pack.add({
 	{ src = "https://github.com/catppuccin/nvim.git", name = "catppuccin" }, -- Catppuccin
 	{ src = "https://github.com/catppuccin/nvim.git", name = "catppuccin-dark" }, -- Catppuccin dark
 	{ src = "https://github.com/rebelot/kanagawa.nvim.git", name = "kanagawa" }, -- Kanagawa
-	-- { src = "https://github.com/everviolet/nvim.git", name = "evergarden" }, -- Evergarden
-	-- { src = "https://github.com/bjarneo/ash.nvim.git", name = "ash" }, -- Ash
-	-- { src = "https://github.com/neanias/everforest-nvim.git", name = "everforest", opts = { background = "hard" } }, -- Everforest
-	-- { src = "https://github.com/bjarneo/ethereal.nvim.git", name = "ethereal" }, -- Ethereal
-	-- { src = "https://github.com/tahayvr/matteblack.nvim.git", name = "matteblack" }, -- Matte Black
-	-- { src = "https://github.com/ellisonleao/gruvbox.nvim.git", name = "gruvbox" }, -- Gruvbox
-	-- { src = "https://github.com/bjarneo/hackerman.nvim.git", name = "hackerman" }, -- Hackerman
-	-- { src = "https://github.com/EdenEast/nightfox.nvim.git", name = "nordfox" }, -- Nord
-	-- { src = "https://github.com/ribru17/bamboo.nvim.git", name = "bamboo" }, -- Osaka-jade
-	-- { src = "https://github.com/olivercederborg/poimandres.nvim.git", name = "poimandres" }, -- Temerald
+	{ src = "https://github.com/everviolet/nvim.git", name = "evergarden" }, -- Evergarden
+	{ src = "https://github.com/bjarneo/ash.nvim.git", name = "ash" }, -- Ash
+	{ src = "https://github.com/neanias/everforest-nvim.git", name = "everforest", opts = { background = "hard" } }, -- Everforest
+	{ src = "https://github.com/bjarneo/ethereal.nvim.git", name = "ethereal" }, -- Ethereal
+	{ src = "https://github.com/tahayvr/matteblack.nvim.git", name = "matteblack" }, -- Matte Black
+	{ src = "https://github.com/ellisonleao/gruvbox.nvim.git", name = "gruvbox" }, -- Gruvbox
+	{ src = "https://github.com/bjarneo/hackerman.nvim.git", name = "hackerman" }, -- Hackerman
+	{ src = "https://github.com/EdenEast/nightfox.nvim.git", name = "nordfox" }, -- Nord
+	{ src = "https://github.com/ribru17/bamboo.nvim.git", name = "bamboo" }, -- Osaka-jade
+	{ src = "https://github.com/olivercederborg/poimandres.nvim.git", name = "poimandres" }, -- Temerald
+  { src = "https://github.com/bjarneo/vantablack.nvim" }, -- Vantablack
+  { src = "https://github.com/xero/miasma.nvim.git" }, -- miasma
 })

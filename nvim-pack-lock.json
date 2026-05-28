@@ -138,7 +138,7 @@
       "src": "https://github.com/windwp/nvim-autopairs"
     },
     "nvim-lspconfig": {
-      "rev": "a4ed4e761c400849e8c9f8bda33e5083f890268c",
+      "rev": "9573948c38bfabeec353ae7dd7d3ffec4c506a6b",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-notify": {
@@ -195,7 +195,7 @@
     },
     "vantablack.nvim": {
       "rev": "8a05ea96343914f1001e937b4fa7d9d44b51d221",
-      "src": "https://github.com/bjarneo/vantablack.nvim.git"
+      "src": "https://github.com/bjarneo/vantablack.nvim"
     },
     "workspace-diagnostics.nvim": {
       "rev": "a35321d8401878cc9558e357acfd0da58b582739",

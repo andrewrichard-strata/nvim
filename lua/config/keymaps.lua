@@ -30,7 +30,7 @@ map("t", "<leader>tt", floating.toggle_bottom_terminal, "toggle bottom terminal"
 map("n", "<leader>n", floating.show_messages, "Show messages")
 
 -- Netrw file explorer
-map("n", "\\\\", ":Explore<cr>", "toggle netrw left split explorer")
+map("n", "<leader>e", ":Explore<cr>", "toggle netrw left split explorer")
 
 -- Insert mode
 map("i", "jk", "<ESC>", "exit insert mode")

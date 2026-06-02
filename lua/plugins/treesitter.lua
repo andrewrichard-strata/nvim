@@ -1,32 +1,17 @@
-local ts = require("nvim-treesitter")
-
-ts.setup()
-
-local parsers = {
-	"python",
-	"lua",
-	"rust",
-	"sql",
-	"bash",
-}
-
-ts.install(parsers)
-
-local disabled = {
-	vim = true,
-	vimdoc = true,
-	help = true,
-}
-
-vim.api.nvim_create_autocmd("FileType", {
-	pattern = parsers,
-	callback = function(args)
-		local ft = vim.bo[args.buf].filetype
-
-		if disabled[ft] then
-			return
-		end
-
-		pcall(vim.treesitter.start, args.buf)
-	end,
+require("nvim-treesitter.configs").setup({
+	ensure_installed = {
+		"python",
+		"lua",
+		"rust",
+		"sql",
+		"bash",
+	},
+	auto_install = true,
+	highlight = {
+		enable = true,
+		disable = { "vim", "vimdoc" },
+	},
+	indent = {
+		enable = true,
+	},
 })

@@ -21,16 +21,12 @@ map("n", "<leader>t3", function()
 	end
 end, "Toggle relative and absolute numbers")
 
-map("n", "<leader>\\", floating.toggle_floating_terminal, "toggle floating terminal")
-map("i", "<leader>\\", floating.toggle_floating_terminal, "toggle floating terminal")
-map("t", "<leader>\\", floating.toggle_floating_terminal, "toggle floating terminal")
-map("n", "<leader>tt", floating.toggle_bottom_terminal, "toggle bottom terminal")
-map("i", "<leader>tt", floating.toggle_bottom_terminal, "toggle bottom terminal")
-map("t", "<leader>tt", floating.toggle_bottom_terminal, "toggle bottom terminal")
+map({ "n", "i", "t", "v" }, "<leader>tf", floating.toggle_floating_terminal, "toggle floating terminal")
+map({ "n", "i", "t", "v" }, "<leader>tb", floating.toggle_bottom_terminal, "toggle bottom terminal")
+map({ "n", "i", "t", "v" }, "<C-M-b>", floating.toggle_right_terminal, "toggle right split opencode")
 map("n", "<leader>n", floating.show_messages, "Show messages")
-
 -- Netrw file explorer
-map("n", "\\\\", ":Explore<cr>", "toggle netrw left split explorer")
+map("n", "<leader>e", ":Explore<cr>", "toggle netrw left split explorer")
 
 -- Insert mode
 map("i", "jk", "<ESC>", "exit insert mode")
@@ -73,7 +69,7 @@ map("n", "<leader>to", "<cmd>tabnew<CR>", "Open new tab")
 map("n", "<leader>tw", "<cmd>tabclose<CR>", "Close tab")
 map("n", "<leader>tn", "<cmd>tabn<CR>", "Next tab")
 map("n", "<leader>tp", "<cmd>tabp<CR>", "Previous tab")
-map("n", "<leader>tf", "<cmd>tabnew %<CR>", "Open buffer in new tab")
+-- map("n", "<leader>tf", "<cmd>tabnew %<CR>", "Open buffer in new tab")
 
 -- Text wrapping
 map("n", "<leader>wp", "<cmd>setlocal wrap<CR>", "Enable text wrap")

@@ -4,7 +4,7 @@ local M = {}
 M.floating_state = { buf = -1, win = -1 }
 M.bottom_state = { buf = -1, win = -1 }
 
-local BASH = "C:/Program Files/Git/bin/bash.exe"
+local BASH = vim.env.SHELL or "bash"
 
 local function is_valid_buf(buf)
   return type(buf) == "number" and buf > 0 and vim.api.nvim_buf_is_valid(buf)

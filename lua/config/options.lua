@@ -6,9 +6,9 @@ vim.g.mapleader = " "
 
 --display
 vo.number = true
-vo.relativenumber=true
+vo.relativenumber = true
 vo.cursorline = true
-vo.scrolloff = 10
+vo.scrolloff = 5
 vo.sidescrolloff = 8
 vo.mouse = "a"
 vo.showmode = true
@@ -44,3 +44,10 @@ vo.undodir = vim.fn.expand("~/nvim/undodir")
 vo.redrawtime = 10000
 vo.maxmempattern = 20000
 vo.diffopt:append("linematch:60")
+
+--set shell:
+if vim.fn.has("win32") == 1 then
+	vo.shell = "C:/Program Files/Git/bin/bash.exe"
+else
+	vo.shell = "/bin/bash"
+end

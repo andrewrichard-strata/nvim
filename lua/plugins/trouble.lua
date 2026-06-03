@@ -1,5 +1,6 @@
 require("trouble").setup({})
 
+
 require("workspace-diagnostics").setup({
   workspace_files = function()
     local gitPath = vim.fn.systemlist("git rev-parse --show-toplevel")[1]

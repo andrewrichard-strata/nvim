@@ -8,4 +8,5 @@ require("rose-pine").setup({
 require("tokyonight").setup({})
 
 -- replace with selected colorscheme
-vim.cmd.colorscheme("tokyonight")
+-- vim.cmd.colorscheme("rose-pine")
+vim.cmd.colorscheme("tokyonight-night")

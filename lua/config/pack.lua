@@ -9,6 +9,7 @@ vim.pack.add({
 	{ src = "https://github.com/mason-org/mason-lspconfig.nvim" },
 	{ src = "https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim" },
 	{ src = "https://github.com/folke/lazydev.nvim" },
+	{ src = "https://github.com/zbirenbaum/copilot.lua.git" },
 
 	-- ui
 	{ src = "https://github.com/j-hui/fidget.nvim.git" },
@@ -37,6 +38,7 @@ vim.pack.add({
 	{ src = "https://github.com/nvim-lua/plenary.nvim.git" },
 	{ src = "https://github.com/nvim-lualine/lualine.nvim.git" },
 	{ src = "https://github.com/folke/todo-comments.nvim.git" },
+	{ src = "https://github.com/folke/snacks.nvim.git" },
 
 	-- colorschemes (from omarchy themes)
 	{ src = "https://github.com/rose-pine/neovim.git", name = "rose-pine" }, -- Rose Pine

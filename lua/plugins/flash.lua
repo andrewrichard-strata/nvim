@@ -1,12 +1,12 @@
 require("flash").setup({})
 
-vim.keymap.set({ "n", "x", "o" }, "z", function()
+vim.keymap.set({ "n", "x", "o" }, "Z", function()
 	require("flash").jump()
 end, { desc = "Flash" })
 
-vim.keymap.set({ "n", "x", "o" }, "Z", function()
-	require("flash").treesitter()
-end, { desc = "Flash Treesitter" })
+-- vim.keymap.set({ "n", "x", "o" }, "Z", function()
+-- 	require("flash").treesitter()
+-- end, { desc = "Flash Treesitter" })
 
 vim.keymap.set("o", "r", function()
 	require("flash").remote()

@@ -25,7 +25,8 @@ vim.pack.add({
 
 	-- fff file search
 	{ src = "https://github.com/dmtrKovalenko/fff.nvim" },
-	-- snacks
+  -- Snacks - github PRs.
+	{ src = "https://github.com/folke/snacks.nvim.git" },
 
 	-- misc plugins
 	{ src = "https://github.com/rcarriga/nvim-notify.git" },

@@ -87,3 +87,5 @@ end, "delete all marks")
 -- map("n", "<leader>ii", function()
 --   indent.enable(not indent.is_enabled())
 -- end, "Toggle indent guides")
+--
+map("n", "<leader>td", ":Todo<CR>", "open todo note")

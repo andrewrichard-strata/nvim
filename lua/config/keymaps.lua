@@ -21,12 +21,17 @@ map("n", "<leader>t3", function()
 	end
 end, "Toggle relative and absolute numbers")
 
-map({ "n", "i", "t", "v" }, "<leader>tf", floating.toggle_floating_terminal, "toggle floating terminal")
-map({ "n", "i", "t", "v" }, "<leader>tb", floating.toggle_bottom_terminal, "toggle bottom terminal")
+map({ "n", "t", "v" }, "<leader>t<space>", floating.toggle_floating_terminal, "toggle floating terminal")
+map({ "n", "t", "v" }, "<leader>tt", floating.toggle_bottom_terminal, "toggle bottom terminal")
 map({ "n", "i", "t", "v" }, "<C-M-b>", floating.toggle_right_terminal, "toggle right split opencode")
-map("n", "<leader>n", floating.show_messages, "Show messages")
+map("n", "<leader>m", floating.show_messages, "Show messages")
 -- Netrw file explorer
-map("n", "<leader>e", ":Explore<cr>", "toggle netrw left split explorer")
+-- map("n", "<leader>e", ":Explore<cr>", "toggle netrw left split explorer")
+map("n", "<leader>e", function()
+    Snacks.explorer({
+      reveal = true,
+    })
+  end, "toggle netrw left split explorer")
 
 -- Insert mode
 map("i", "jk", "<ESC>", "exit insert mode")
@@ -88,4 +93,24 @@ end, "delete all marks")
 --   indent.enable(not indent.is_enabled())
 -- end, "Toggle indent guides")
 --
-map("n", "<leader>td", ":Todo<CR>", "open todo note")
+map("n", "<leader>n", ":Todo<CR>", "open todo note")
+
+--Github via Snacks.gh
+map("n", "<leader>gi", function()
+	Snacks.picker.gh_issue()
+end, "GitHub Issues (open)")
+
+map("n", "<leader>gI", function()
+	Snacks.picker.gh_issue({ state = "all" })
+end, "GitHub Issues (all)")
+
+map("n", "<leader>gp", function()
+	Snacks.picker.gh_pr()
+end, "GitHub Pull Requests (open)")
+
+map("n", "<leader>gP", function()
+	Snacks.picker.gh_pr({ state = "all" })
+end, "GitHub Pull Requests (all)")
+
+-- Lazygit via Snacks
+map({"n","t","i","v"}, "<leader>gg", "<CMD>lua Snacks.lazygit.open()<CR>", "Toggle Open LazyGit")

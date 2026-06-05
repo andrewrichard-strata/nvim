@@ -8,6 +8,10 @@ local parsers = {
 	"rust",
 	"sql",
 	"bash",
+  "markdown",
+  "html",
+  "latex",
+  "yaml",
 }
 
 ts.install(parsers)

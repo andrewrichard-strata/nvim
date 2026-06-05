@@ -42,17 +42,15 @@ map("x", "p", [["_dP"]], "Paste without losing yanked selection")
 -- Normal mode
 map("n", "<C-d>", "<C-d>zz", "scroll down centered")
 map("n", "<C-u>", "<C-u>zz", "scroll up centered")
--- map("n", "j", "jzz", "move down centered")
--- map("n", "k", "kzz", "move up centered")
 map("n", "<leader>S", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], "replace word under cursor")
 
-vim.keymap.set("n", "j", function()
-	return (vim.v.count == 0 and "gj" or "j") .. "zz"
-end, { expr = true, silent = true, desc = "Down (wrap-aware, centered)" })
-
-vim.keymap.set("n", "k", function()
-	return (vim.v.count == 0 and "gk" or "k") .. "zz"
-end, { expr = true, silent = true, desc = "Up (wrap-aware, centered)" })
+-- vim.keymap.set("n", "j", function()
+-- 	return (vim.v.count == 0 and "gj" or "j") .. "zz"
+-- end, { expr = true, silent = true, desc = "Down (wrap-aware, centered)" })
+--
+-- vim.keymap.set("n", "k", function()
+-- 	return (vim.v.count == 0 and "gk" or "k") .. "zz"
+-- end, { expr = true, silent = true, desc = "Up (wrap-aware, centered)" })
 
 -- Visual mode
 map("v", "J", ":m '>+1<CR>gv=gv", "move selection down")

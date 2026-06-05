@@ -136,6 +136,11 @@ require("mason-lspconfig").setup({
 			local lspconfig = require("lspconfig")
 			lspconfig.ruff.setup({
 				capabilities = capabilities,
+				init_options = {
+					settings = {
+						organizeImports = true,
+					},
+				},
 			})
 		end,
 	},

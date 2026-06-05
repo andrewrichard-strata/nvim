@@ -169,6 +169,10 @@
       "rev": "a488957d803943a4201ac3b774913fcafa9e6b3a",
       "src": "https://github.com/olivercederborg/poimandres.nvim.git"
     },
+    "render-markdown.nvim": {
+      "rev": "5adf0895310c1904e5abfaad40a2baad7fe44a07",
+      "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
+    },
     "rose-pine": {
       "rev": "ff483051a47e27d84bdef47703538df1ed9f4a47",
       "src": "https://github.com/rose-pine/neovim.git"

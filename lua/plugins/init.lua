@@ -1,8 +1,8 @@
 require("plugins.theme")
 
 require("plugins.lsp")
+require("plugins.completion")
 require("plugins.treesitter")
-require("plugins.blink")
 require("plugins.mini-surround")
 require("plugins.mini-ai")
 require("plugins.todo-comments")

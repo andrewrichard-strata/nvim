@@ -28,10 +28,10 @@ map("n", "<leader>m", floating.show_messages, "Show messages")
 -- Netrw file explorer
 -- map("n", "<leader>e", ":Explore<cr>", "toggle netrw left split explorer")
 map("n", "<leader>e", function()
-    Snacks.explorer({
-      reveal = true,
-    })
-  end, "toggle netrw left split explorer")
+	Snacks.explorer({
+		reveal = true,
+	})
+end, "toggle netrw left split explorer")
 
 -- Insert mode
 map("i", "jk", "<ESC>", "exit insert mode")
@@ -111,4 +111,22 @@ map("n", "<leader>gP", function()
 end, "GitHub Pull Requests (all)")
 
 -- Lazygit via Snacks
-map({"n","t","i","v"}, "<leader>gg", "<CMD>lua Snacks.lazygit.open()<CR>", "Toggle Open LazyGit")
+map({ "n", "t", "i", "v" }, "<leader>gg", "<CMD>lua Snacks.lazygit.open()<CR>", "Toggle Open LazyGit")
+
+-- Trouble diagnostics
+vim.keymap.set("n", "<leader>xx", "<cmd>Trouble diagnostics toggle<cr>", { desc = "Diagnostics (Trouble)" })
+vim.keymap.set(
+	"n",
+	"<leader>xX",
+	"<cmd>Trouble diagnostics toggle filter.buf=0<cr>",
+	{ desc = "Buffer Diagnostics (Trouble)" }
+)
+vim.keymap.set("n", "<leader>cs", "<cmd>Trouble symbols toggle focus=false<cr>", { desc = "Symbols (Trouble)" })
+vim.keymap.set(
+	"n",
+	"<leader>cl",
+	"<cmd>Trouble lsp toggle focus=false win.position=right<cr>",
+	{ desc = "LSP Definitions / references / ... (Trouble)" }
+)
+vim.keymap.set("n", "<leader>xL", "<cmd>Trouble loclist toggle<cr>", { desc = "Location List (Trouble)" })
+vim.keymap.set("n", "<leader>xQ", "<cmd>Trouble qflist toggle<cr>", { desc = "Quickfix List (Trouble)" })

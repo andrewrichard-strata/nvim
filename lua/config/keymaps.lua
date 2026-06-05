@@ -24,9 +24,9 @@ end, "Toggle relative and absolute numbers")
 map({ "n", "t", "v" }, "<leader>t<space>", floating.toggle_floating_terminal, "toggle floating terminal")
 map({ "n", "t", "v" }, "<leader>tt", floating.toggle_bottom_terminal, "toggle bottom terminal")
 map({ "n", "i", "t", "v" }, "<C-M-b>", floating.toggle_right_terminal, "toggle right split opencode")
-map("n", "<leader>n", floating.show_messages, "Show messages")
+map("n", "<leader>m", floating.show_messages, "Show messages")
 -- Netrw file explorer
-map("n", "<leader>e", ":Explore<cr>", "toggle netrw left split explorer")
+-- map("n", "<leader>e", ":Explore<cr>", "toggle netrw left split explorer")
 map("n", "<leader>e", function()
     Snacks.explorer({
       reveal = true,
@@ -92,6 +92,8 @@ end, "delete all marks")
 -- map("n", "<leader>ii", function()
 --   indent.enable(not indent.is_enabled())
 -- end, "Toggle indent guides")
+--
+map("n", "<leader>n", ":Todo<CR>", "open todo note")
 
 --Github via Snacks.gh
 map("n", "<leader>gi", function()

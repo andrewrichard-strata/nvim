@@ -88,8 +88,8 @@ map("n", "<leader>xm", function()
 end, "delete all marks")
 
 -- Todo
-map("n", "<leader>n", ":Todo<CR>", "open todo note")
-
+map("n", "<leader>ng", "<cmd>TodoGlobal<CR>", "open global todo note")
+map("n", "<leader>nl", "<cmd>TodoLocal<CR>", "open local todo note")
 -- Indent guides
 -- local indent = require("blink.indent")
 -- map("n", "<leader>ii", function()

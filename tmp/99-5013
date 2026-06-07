@@ -1,0 +1,4 @@
+-- Use dofile here because this config file also calls require("trouble") for the
+-- plugin itself; LuaLS can otherwise report that the same file is required under
+-- different module names.
+dofile(vim.fn.stdpath("config") .. "/lua/plugins/trouble.lua")

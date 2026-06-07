@@ -1,0 +1,53 @@
+<Context>
+You receive a selection in neovim that you need to replace with new code.
+The selection's contents may contain notes, incorporate the notes every time if there are some.
+consider the context of the selection and what you are suppose to be implementing
+<SELECTION_LOCATION>
+range(point(13,1),point(13,27))
+</SELECTION_LOCATION>
+<SELECTION_CONTENT>
+require("plugins.trouble")
+</SELECTION_CONTENT>
+<SURROUNDING_CONTEXT>
+require("plugins.theme")
+
+require("plugins.lsp")
+require("plugins.completion")
+require("plugins.fff")
+require("plugins.nvim-notify")
+require("plugins.fidget")
+require("plugins.mini-surround")
+require("plugins.mini-ai")
+require("plugins.todo-comments")
+-- require("plugins.gitsigns")
+require("plugins.smear")
+require("plugins.trouble")
+require("plugins.formatting")
+require("plugins.cloak")
+require("plugins.flash")
+require("plugins.lualine")
+require("plugins.snacks")
+require("plugins.treesitter")
+require("plugins.render-markdown")
+require("plugins._99")
+</SURROUNDING_CONTEXT>
+
+</Context>
+<Prompt>
+I'm seeing "The same file is required with different names." diagnostic in my plugins.init and I don't know what that means. Please fix this and leave a comment explaining. 
+</Prompt>
+
+<Location><File>/home/ham-munculus/.config/nvim/lua/plugins/init.lua</File><Function>range(point(13,1),point(13,27))</Function></Location>
+<FunctionText>require("plugins.trouble")</FunctionText>
+<TEMP_FILE>./tmp/99-5013</TEMP_FILE>
+<MustObey>
+NEVER alter any file other than TEMP_FILE.
+never provide the requested changes as conversational output. Return only the code.
+ONLY provide requested changes by writing the change to TEMP_FILE
+
+never attempt to read TEMP_FILE.
+It is purely for output.
+Previous contents, which may not exist, can be written over without worry
+After writing TEMP_FILE once you should be done.  Be done and end the session.
+
+</MustObey>

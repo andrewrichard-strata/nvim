@@ -1,0 +1,9 @@
+local trouble = require("trouble")
+
+map("n", "<leader>xn", function()
+	trouble.next({ mode = "diagnostics", skip_groups = true, jump = true })
+end, "Next diagnostic (Trouble)")
+
+map("n", "<leader>xp", function()
+	trouble.prev({ mode = "diagnostics", skip_groups = true, jump = true })
+end, "Previous diagnostic (Trouble)")

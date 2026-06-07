@@ -1,7 +1,7 @@
 local augroup = vim.api.nvim_create_augroup("UserConfig", { clear = true })
 
 vim.api.nvim_create_autocmd("BufReadPost", {
-	group = auroup,
+	group = augroup,
 	desc = "Return to last edit position",
 	callback = function()
 		local mark = vim.api.nvim_buf_get_mark(0, '"')

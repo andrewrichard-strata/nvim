@@ -1,9 +1,20 @@
 local _99 = require("99")
 local cwd = vim.uv.cwd()
 local basename = vim.fs.basename(cwd)
+local hostname = vim.fn.hostname()
+
+local function get_model()
+	if hostname == "SDT-5CD322201W" then
+		return "github-copilot/gpt-5.5"
+	end
+	return "openai/gpt-5.5"
+end
+
+local model = get_model()
+
 _99.setup({
 	-- provider = _99.Providers.ClaudeCodeProvider,  -- default: OpenCodeProvider
-	model = "openai/gpt-5.5",
+	model = model,
 	provider_extra_args = { "--dangerously-skip-permissions" },
 	logger = {
 		level = _99.DEBUG,

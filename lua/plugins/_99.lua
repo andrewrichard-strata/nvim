@@ -100,6 +100,22 @@ map("n", "<leader>9s", function()
 	_99.search()
 end, "Project wide search with prompt to return list of locations with notes in qf list")
 
+vim.keymap.set("v", "<leader>9vp", function()
+	_99.visual_prompt()
+end)
+vim.keymap.set("n", "<leader>9i", function()
+	_99.info()
+end)
+vim.keymap.set("n", "<leader>9l", function()
+	_99.view_logs()
+end)
+vim.keymap.set("n", "<leader>9n", function()
+	_99.next_request_logs()
+end)
+vim.keymap.set("n", "<leader>9p", function()
+	_99.prev_request_logs()
+end)
+
 -- take extra note that i have visual selection only in v mode
 -- technically whatever your last visual selection is, will be used
 -- so i have this set to visual mode so i dont screw up and use an

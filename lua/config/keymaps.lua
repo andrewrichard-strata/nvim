@@ -146,3 +146,24 @@ map(
 )
 map("n", "<leader>xL", "<cmd>Trouble loclist toggle<cr>", "Location List (Trouble)")
 map("n", "<leader>xQ", "<cmd>Trouble qflist toggle<cr>", "Quickfix List (Trouble)")
+
+-- Smart Splits / WezTerm
+--
+local ok, splits = pcall(require, "smart-splits")
+if ok then
+	map("n", "<A-h>", splits.resize_left, "Resize split left")
+	map("n", "<A-j>", splits.resize_down, "Resize split down")
+	map("n", "<A-k>", splits.resize_up, "Resize split up")
+	map("n", "<A-l>", splits.resize_right, "Resize split right")
+
+	map("n", "<C-h>", splits.move_cursor_left, "Move to left pane")
+	map("n", "<C-j>", splits.move_cursor_down, "Move to lower pane")
+	map("n", "<C-k>", splits.move_cursor_up, "Move to upper pane")
+	map("n", "<C-l>", splits.move_cursor_right, "Move to right pane")
+	map("n", "<C-\\>", splits.move_cursor_previous, "Move to previous pane")
+
+	map("n", "<leader><leader>h", splits.swap_buf_left, "Swap buffer left")
+	map("n", "<leader><leader>j", splits.swap_buf_down, "Swap buffer down")
+	map("n", "<leader><leader>k", splits.swap_buf_up, "Swap buffer up")
+	map("n", "<leader><leader>l", splits.swap_buf_right, "Swap buffer right")
+end
